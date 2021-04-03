@@ -1,0 +1,30 @@
+/* css resets and default settings */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body, input{
+  --type-first: 'Work Sans', Arial,sans-serif;
+  font-family: var(--type-first);
+}
+
+h1{
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #404040;
+}
+
+.container{
+  max-width: 55rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}

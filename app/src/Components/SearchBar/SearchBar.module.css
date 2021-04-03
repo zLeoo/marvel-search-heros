@@ -1,0 +1,26 @@
+.SearchBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.SearchBar input{
+    width: 90%;
+    height: 2.8rem;
+    background-color: #fdecec;
+    border:  1px solid #eee ;
+    border-radius:50px ;
+    outline: none;
+    padding-left: 50px;
+    background-image: url(../../Assets/busca/Lupa/Shape@1\,5x.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 12px left 15px;
+}
+/*import { ReactComponent as Logo } from '../../Assets/logo/Group@1,5x.svg';*/
+
+.SearchBar input:focus,
+.SearchBar input:hover{
+    
+    border-color: #ffacac;
+    
+}
