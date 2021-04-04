@@ -10,7 +10,6 @@ export const PRIVATE_KEY = process.env.REACT_APP_PRIVATE_API_KEY;
 export const HASH = CryptoJS.MD5(TIMESTAMP + PRIVATE_KEY + PUBLIC_KEY).toString();
 
 export function GET_HEROS(value){
-    console.log(value)
     return{
         url: `${API_URL}/characters?nameStartsWith=${value}&ts=${TIMESTAMP}&apikey=${PUBLIC_KEY}&hash=${HASH}`
     }

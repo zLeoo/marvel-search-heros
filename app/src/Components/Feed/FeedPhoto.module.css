@@ -1,0 +1,27 @@
+li{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+li div > h3{
+    margin-top: 1.2rem;
+    
+}
+
+li > img {
+    border-bottom: 5px solid #ff1510 ;
+}
+
+li > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+li div > svg{
+
+    min-width: 20px;
+    min-height: 20px;
+    
+}

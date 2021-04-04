@@ -13,9 +13,18 @@ body, input{
   --type-first: 'Work Sans', Arial,sans-serif;
   font-family: var(--type-first);
 }
+ul{
+  list-style: none;
+}
 
 h1{
   font-size: 2.3rem;
+  font-weight: 600;
+  color: #404040;
+}
+
+h3{
+  font-size: 1.1rem;
   font-weight: 600;
   color: #404040;
 }

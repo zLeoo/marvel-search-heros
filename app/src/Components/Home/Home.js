@@ -1,3 +1,4 @@
+import Feed from "../Feed/Feed";
 import Header from "../Header/Header"
 
 
@@ -6,7 +7,8 @@ const Home = () => {
         <div className="container">
             <Header/>
             
-            <h2>Home</h2>
+            <Feed/>
+            
         </div>
     );
 };
