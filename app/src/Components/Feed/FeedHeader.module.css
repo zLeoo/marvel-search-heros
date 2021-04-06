@@ -8,3 +8,15 @@
     display: flex;
     align-items: center;
 }
+
+.heroIcon{
+    margin-right: 1rem;
+}
+
+.toggle{
+    margin: 1rem 1rem;
+}
+
+.heartIcon{
+    margin-left: 1rem ;
+}

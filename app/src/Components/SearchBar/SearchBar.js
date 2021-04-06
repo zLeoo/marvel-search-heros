@@ -1,7 +1,7 @@
 
 import styles from './SearchBar.module.css';
 
-import { GET_HEROS } from './../../Api';
+import { GET_HEROS, GET_HEROS_BY_NAME } from './../../Api';
 import { useContext } from 'react';
 import { UserContext } from './../../UserContext';
 
@@ -9,13 +9,18 @@ import { UserContext } from './../../UserContext';
 
 const SearchBar = ({name, placeholder, value, setValue, onChange}) => {
 
-    const { url } = GET_HEROS(value);
-    const { request } = useContext(UserContext);
-    
+    const {setValueGlobal, request, toggle} = useContext(UserContext);
+
     async function handleSubmit(event) {
         event.preventDefault();
-        
+
+        setValueGlobal(value);
+
+        const {url} = toggle ?  GET_HEROS_BY_NAME(value) : GET_HEROS(value);
+
         request(url);
+
+        
         
     }
 
